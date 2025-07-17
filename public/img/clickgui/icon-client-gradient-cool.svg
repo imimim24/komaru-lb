@@ -1,0 +1,30 @@
+<svg
+  width="17"
+  height="17"
+  viewBox="0 0 263.18201 263.18079"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <defs>
+    <linearGradient id="colorPulse" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#ff4d4d">
+        <animate attributeName="stop-color" values="#6799E4;#163E7A;#6799E4" dur="1s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#ff4d4d">
+        <animate attributeName="stop-color" values="#6799E4;#163E7A;#6799E4" dur="1s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <clipPath id="clip0">
+      <rect width="947.07" height="279" x="0" y="0" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#clip0)" transform="translate(0,-15.8192)">
+    <path
+      fill="url(#colorPulse)"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M 263.182,147.409 C 263.182,74.7827 204.217,15.8192 131.59,15.8192 H 0 V 147.409 C 0,220.037 58.9635,279 131.59,279 c 72.627,0 131.592,-58.963 131.592,-131.591 z"
+    />
+  </g>
+</svg>

@@ -1,0 +1,146 @@
+@use "colors.scss" as *;
+
+// inter
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/font/inter/Inter-Bold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/font/inter/Inter-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/font/inter/Inter-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/font/inter/Inter-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+//minecraft
+@font-face {
+  font-family: "minecraft";
+  src: url("./assets/font/minecraft/MinecraftRegular.otf") format("opentype");
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "minecraft";
+  src: url("./assets/font/minecraft/MinecraftBold.otf") format("opentype");
+  font-weight: bold;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "minecraft";
+  src: url("./assets/font/minecraft/MinecraftItalic.otf") format("opentype");
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "minecraft";
+  src: url("./assets/font/minecraft/MinecraftBoldItalic.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+// rubik
+@font-face {
+    font-family: "Rubik";
+    src: url("./assets/font/rubik/Rubik-Bold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("./assets/font/rubik/Rubik-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("./assets/font/rubik/Rubik-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("./assets/font/rubik/Rubik-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+// red hat text
+@font-face {
+    font-family: "RedHatText";
+    src: url("./assets/font/redhattext/RedHatText-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "RedHatText";
+    src: url("./assets/font/redhattext/RedHatText-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "RedHatText";
+    src: url("./assets/font/redhattext/RedHatText-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "RedHatText";
+    src: url("./assets/font/redhattext/RedHatText-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    font-family: "RedHatText", sans-serif;
+    user-select: none;
+    overflow: hidden;
+}
+
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $accent-color;
+    border-radius: 10px;
+}
