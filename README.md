@@ -12,31 +12,31 @@ A simple but beautiful theme for your game.
 <details>
 <summary>HUD</summary>
 
-![image](img/1.png)
+![image](.github/img/1.png)
 </details>
 <details>
 <summary>ClickGUI</summary>
 
-![image](img/2.png)
+![image](.github/img/2.png)
 </details>
 <details>
 <summary>Main Menu</summary>
 
-![image](img/3.png)
+![image](.github/img/3.png)
 
 ⬇ if you click click me ⬇
 
-![image](img/3.1.png)
+![image](.github/img/3.1.png)
 </details>
 <details>
 <summary>Inventory</summary>
 
-![image](img/4.png)
+![image](.github/img/4.png)
 </details>
 <details>
 <summary>TargetHud</summary>
 
-![image](img/5.png)
+![image](.github/img/5.png)
 </details>
 
 ## Hey!
@@ -51,7 +51,7 @@ Totem counter doesnt count totem on offhand.
 1. Choose the color you want and download.
 2. Open LiquidBounce, type `.client theme browse` in minecraft chat
 3. Drag the downloaded theme file into your themes folder that was opened.
-4. Apply the theme with `.client theme set komaru`
+4. Apply the theme with `.client theme set komaru-(color)`
 5. Done!
 
 thx for using my theme
