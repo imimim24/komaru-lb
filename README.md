@@ -1,6 +1,6 @@
 <p align="center">
-<img width="300" height="500" alt="komaru" src="https://media.githubusercontent.com/media/imimim24/komaru-lb/main/.github/img/komaru.png" />
-
+  <img src=".github/img/komaru.png" alt="komaru" />
+</p>
 
 <p align="center">
     <img src="https://img.shields.io/github/downloads/imimim24/komaru-lb/total?label=Downloads" alt="Downloads">
