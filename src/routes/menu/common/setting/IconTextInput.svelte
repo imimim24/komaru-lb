@@ -40,18 +40,18 @@
   }
 
   .input {
-    color: $menu-text-color;
+    color: white;
     font-family: "Inter", sans-serif;
     font-size: 20px;
-    background-color: rgba($menu-base-color, .36);
+    background-color: rgba(black, .36);
     border: none;
     padding: 0 20px 0 18px;
     border-radius: 0 5px 5px 0;
-    border-left: solid 2px $menu-base-color;
+    border-left: solid 2px black;
     width: 100%;
 
     &:invalid {
-      border: solid 2px $menu-error-color;
+      border: solid 2px #fc4130;
     }
   }
 

@@ -53,7 +53,7 @@
   .notification {
     grid-row-start: 1;
     grid-column-start: 1;
-    background-color: rgba($menu-base-color, 0.68);
+    background-color: rgba(black, 0.68);
     border-radius: 12px;
     display: grid;
     grid-template-areas:
@@ -65,7 +65,7 @@
     min-width: 350px;
 
     .title {
-      color: $menu-text-color;
+      color: white;
       font-weight: 600;
       font-size: 18px;
       grid-area: b;
@@ -73,7 +73,7 @@
     }
 
     .message {
-      color: $menu-text-dimmed-color;
+      color: rgba(211, 211, 211, 255);
       font-weight: 400;
       grid-area: c;
     }
@@ -82,14 +82,14 @@
       grid-area: a;
       height: 65px;
       width: 65px;
-      background-color: rgba($menu-base-color, 0.68);
+      background-color: rgba(black, 0.68);
       display: flex;
       align-items: center;
       justify-content: center;
       margin-right: 10px;
 
       &.error {
-        background-color: rgba($menu-error-color, 0.68);
+        background-color: rgba(#fc4130, 0.68);
       }
     }
   }

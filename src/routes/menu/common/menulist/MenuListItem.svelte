@@ -135,7 +135,7 @@
   .subtitle {
     grid-area: d;
     font-size: 18px;
-    color: $menu-text-dimmed-color;
+    color: rgba(211, 211, 211, 255);
     transition: ease color .2s;
     align-self: flex-start;
   }

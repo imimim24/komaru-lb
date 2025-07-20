@@ -39,7 +39,7 @@
       padding: 15px;
 
       &.parent-hovered {
-        background-color: $menu-text-color;
+        background-color: white;
 
         .title {
           color: $accent-color;
@@ -48,7 +48,7 @@
     }
 
     .title {
-      color: $menu-text-color;
+      color: white;
       font-weight: 600;
       font-size: 16px;
       transition: ease color 0.2s;

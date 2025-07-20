@@ -143,10 +143,10 @@
   }
 
   .tag {
-    color: $arraylist-tag-color;
+    color: #AAAAAA;
     text-shadow:
-        0 0 6px rgba($arraylist-tag-color, 0.9),
-        0 0 12px rgba($arraylist-tag-color, 0.8),
-        0 0 24px rgba($arraylist-tag-color, 0.6);
+        0 0 6px rgba(#AAAAAA, 0.9),
+        0 0 12px rgba(#AAAAAA, 0.8),
+        0 0 24px rgba(#AAAAAA, 0.6);
     }
 </style>

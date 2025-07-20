@@ -98,7 +98,7 @@
                     <Status
                         max={20}
                         value={playerData.armor}
-                        color="#163e7a"
+                        color="var(--1)"
                         alignRight={false}
                         icon="shield"
                     />
@@ -110,7 +110,7 @@
                     <Status
                         max={playerData.maxAir}
                         value={playerData.air}
-                        color="#163e7a"
+                        color="var(--1)"
                         alignRight={true}
                     />
                 {:else}
@@ -124,7 +124,7 @@
                         <Status
                             max={maxAbsorption}
                             value={playerData.absorption}
-                            color="#163e7a"
+                            color="var(--1)"
                             alignRight={false}
                             icon="heart"
                             label={`${Math.floor(playerData.absorption)}`}
@@ -137,7 +137,7 @@
                     <Status
                         max={playerData.maxHealth}
                         value={playerData.health}
-                        color="#2c5899"
+                        color="var(--2)"
                         alignRight={false}
                         icon="heart"
                         label={`${Math.floor(playerData.health)}`}
@@ -145,7 +145,7 @@
                     <Status
                         max={20}
                         value={playerData.food}
-                        color="#2c5899"
+                        color="var(--2)"
                         alignRight={true}
                         icon="food"
                     />
@@ -155,7 +155,7 @@
                 <Status
                     max={100}
                     value={playerData.experienceProgress * 100}
-                    color="#4472b6"
+                    color="var(--3)"
                     alignRight={false}
                     label={playerData.experienceLevel.toString()}
                 />
@@ -188,6 +188,13 @@
 
 <style lang="scss">
     @use "../../../../colors.scss" as *;
+
+    :root {
+    --1: #{$hotbar1};
+    --2: #{$hotbar2};
+    --3: #{$hotbar3};
+    }
+
 
     .pair {
         display: grid;

@@ -27,7 +27,7 @@
   .lds-ring div {
     box-sizing: border-box;
     position: relative;
-    color: $menu-button-loader-color;
+    color: white;
   }
 
   .lds-ring {

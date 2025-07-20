@@ -105,8 +105,8 @@
     }
 
     &.error {
-      background-color: rgba($menu-error-color, 0.1) !important;
-      color: $menu-error-color !important;
+      background-color: rgba(#fc4130, 0.1) !important;
+      color: #fc4130 !important;
     }
 
     &.active {

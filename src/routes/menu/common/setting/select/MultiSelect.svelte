@@ -44,13 +44,13 @@
 
   .option {
     font-weight: 500;
-    color: $menu-text-dimmed-color;
+    color: rgba(211, 211, 211, 255);
     font-size: 20px;
     padding: 15px 20px;
     transition: ease color .2s;
 
     &:hover {
-      color: $menu-text-color;
+      color: white;
     }
 
     &.active {

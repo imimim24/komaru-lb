@@ -133,9 +133,7 @@
                 />
             </div>
             <div class="name">{target.username}</div>
-            <div class="heart-icon">
-                <img src="img/hud/targethud/icon-health.svg" alt="heart-icon" />
-            </div>
+            <div class="heart-icon"></div>
             <div class="stats">
                 <div class="health">
                     {Math.floor(target.actualHealth + target.absorption)}
@@ -213,11 +211,15 @@
         position: absolute;
         left: 70px;
         top: 28px;
-
-        img {
-            width: 18px;
-            height: 16px;
-        }
+        background-color: $text;
+        mask-image: url("/img/hud/targethud/icon-health.svg");
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        mask-position: center;
+        -webkit-mask-image: url("/img/hud/targethud/icon-health.svg");
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: contain;
+        -webkit-mask-position: center;
     }
 
     .stats {
@@ -245,17 +247,17 @@
             font-family: "inter";
 
             .winning {
-                color: $targethud-winning;
+                color: green;
                 filter: grayscale(50%);
             }
 
             .losing {
-                color: $targethud-losing;
+                color: red;
                 filter: grayscale(50%);
             }
 
             .draw {
-                color: $targethud-draw;
+                color: orange;
                 filter: grayscale(50%);
             }
         }

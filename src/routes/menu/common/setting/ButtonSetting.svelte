@@ -37,7 +37,7 @@
     position: relative;
     border: none;
     background-color: $accent-color;
-    color: $menu-text-color;
+    color: white;
     font-family: "Inter", sans-serif;
     padding: 20px;
     border-radius: 5px;
@@ -49,7 +49,7 @@
     }
 
     &.secondary {
-      background-color: rgba($menu-base-color, .36);
+      background-color: rgba(black, .36);
     }
 
     &:not([disabled]):hover {
@@ -57,7 +57,7 @@
       cursor: pointer;
 
       &.secondary {
-        background-color: color.adjust(color.adjust($menu-base-color, $saturation: -30%), $lightness: -10%);
+        background-color: color.adjust(color.adjust(black, $saturation: -30%), $lightness: -10%);
       }
     }
 

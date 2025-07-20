@@ -47,8 +47,8 @@
 
   .tab-button {
     font-family: "Inter", sans-serif;
-    background-color: rgba($menu-base-color, .36);
-    color: $menu-text-color;
+    background-color: rgba(black, .36);
+    color: white;
     padding: 10px;
     border: solid 2px transparent;
     border-radius: 5px;

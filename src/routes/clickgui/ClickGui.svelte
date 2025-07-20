@@ -99,8 +99,8 @@ $GRID_SIZE: 10px;
     z-index: -9999;
 
 &.grid {
-    background-image: linear-gradient(to right, $clickgui-grid-color 1px, transparent 1px),
-    linear-gradient(to bottom, $clickgui-grid-color 1px, transparent 1px);
+    background-image: linear-gradient(to right, rgba(100, 100, 100, 0.2) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(100, 100, 100, 0.2) 1px, transparent 1px);
 }
 }
 </style>

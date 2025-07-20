@@ -61,6 +61,13 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    background-color: $text;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
   }
 
   &.enabled::after,
@@ -80,19 +87,24 @@
   }
 
   &.success::after {
-    background-image: url("/img/hud/notification/icon-success.svg");
+    mask-image: url("/img/hud/notification/icon-success.svg");
+    -webkit-mask-image: url("/img/hud/notification/icon-success.svg");
   }
   &.error::after {
-    background-image: url("/img/hud/notification/icon-error.svg");
+    mask-image: url("/img/hud/notification/icon-error.svg");
+    -webkit-mask-image: url("/img/hud/notification/icon-error.svg");
   }
   &.info::after {
-    background-image: url("/img/hud/notification/icon-info.svg");
+    mask-image: url("/img/hud/notification/icon-info.svg");
+    -webkit-mask-image: url("/img/hud/notification/icon-info.svg");
   }
   &.enabled::after {
-    background-image: url("/img/hud/notification/icon-on.svg");
+    mask-image: url("/img/hud/notification/icon-on.svg");
+    -webkit-mask-image: url("/img/hud/notification/icon-on.svg");
   }
   &.disabled::after {
-    background-image: url("/img/hud/notification/icon-off.svg");
+    mask-image: url("/img/hud/notification/icon-off.svg");
+    -webkit-mask-image: url("/img/hud/notification/icon-off.svg");
   }
 }
 

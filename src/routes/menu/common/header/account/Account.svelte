@@ -193,11 +193,11 @@
 
     .username {
       font-weight: 600;
-      color: $menu-text-color;
+      color: white;
       font-size: 20px;
       grid-area: b;
       align-self: flex-end;
-      text-shadow: 0 0 10px $menu-text-color;
+      text-shadow: 0 0 10px white;
     }
 
     .account-type {
@@ -207,13 +207,13 @@
       align-self: flex-start;
 
       .premium {
-        color: $menu-account-premium-color;
-        text-shadow: 0 0 10px $menu-account-premium-color;
+        color: #67D24A;
+        text-shadow: 0 0 10px #67D24A;
       }
 
       .offline {
-        color: $menu-text-dimmed-color;
-        text-shadow: 0 0 10px $menu-text-dimmed-color;
+        color: rgba(211, 211, 211, 255);
+        text-shadow: 0 0 10px rgba(211, 211, 211, 255);
       }
     }
 
@@ -245,19 +245,19 @@
     z-index: 1000;
     width: 100%;
     border-radius: 0 0 5px 5px;
-    background-color: rgba($menu-base-color, 0.9);
+    background-color: rgba(black, 0.9);
 
     .placeholder {
       font-weight: 500;
       font-size: 20px;
-      color: $menu-text-dimmed-color;
+      color: rgba(211, 211, 211, 255);
       padding: 15px 20px;
     }
 
     .account-search {
-      background-color: rgba($menu-base-color, .36);
+      background-color: rgba(black, .36);
       border: none;
-      color: $menu-text-color;
+      color: white;
       font-family: "Inter", sans-serif;
       padding: 15px 15px 15px 50px;
       width: 100%;
@@ -274,7 +274,7 @@
     }
 
     .account-item {
-      color: $menu-text-dimmed-color;
+      color: rgba(211, 211, 211, 255);
       font-size: 20px;
       padding: 15px 20px;
       transition: ease color .2s;
@@ -298,7 +298,7 @@
       }
 
       &:hover {
-        color: $menu-text-color;
+        color: white;
       }
 
       &.active {
