@@ -31,7 +31,7 @@
                 {
                     id: particleId++,
                     x: width,
-                    y: 1,
+                    y: 0,
                     dx,
                     dy,
                     size,

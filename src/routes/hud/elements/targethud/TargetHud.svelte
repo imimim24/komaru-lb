@@ -266,7 +266,7 @@
     .avatar {
         margin: 7.16px;
         left: 3.25px;
-        top: 2.5px;
+        top: 2.0px;
         scale: 125.297%;
         height: 50px;
         width: 50px;
