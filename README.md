@@ -56,7 +56,7 @@ Totem counter doesnt count totem on offhand.
 ## Usage
 
 1. Choose the color you want and download.
-2. Open LiquidBounce, type `.client theme browse` in minecraft chat
+2. Open LiquidBounce, type `.client theme browse` in minecraft chat.
 3. Drag the downloaded theme file into your themes folder that was opened.
 4. Apply the theme with `.client theme set komaru-(color)`
 5. Done!
