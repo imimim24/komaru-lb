@@ -9,6 +9,8 @@
 ## Komaru Theme 
 A simple but beautiful theme for your game.
 
+This theme is not finished. There may be bugs.
+
 HUD 100%
 
 Menu 35% (in work)
