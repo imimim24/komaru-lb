@@ -52,15 +52,15 @@
 
 <div class="header">
     <Notifications />
-
-    <Account/>
+    <Account />
 </div>
 
 <style lang="scss">
-  .header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 60px;
-    align-items: center;
-  }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: fit-content;
+  margin-left: auto;
+}
 </style>

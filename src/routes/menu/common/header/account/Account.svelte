@@ -171,8 +171,8 @@
   }
 
   .header {
-    padding: 15px 18px;
-    border-radius: 5px;
+    padding: 12px 18px;
+    border-radius: 12px;
     align-items: center;
     display: grid;
     grid-template-areas:
@@ -182,10 +182,12 @@
     column-gap: 15px;
     cursor: pointer;
     transition: ease border-radius .2s;
+    background-color: rgba(black, .36);
+    box-shadow: $shadow;
 
     .avatar {
-      height: 68px;
-      width: 68px;
+      height: 63px;
+      width: 63px;
       box-shadow: 0 0 15px black;
       border-radius: 50%;
       grid-area: a;
@@ -258,7 +260,7 @@
       background-color: rgba(black, .36);
       border: none;
       color: white;
-      font-family: "Inter", sans-serif;
+      font-family: "redhattext", sans-serif;
       padding: 15px 15px 15px 50px;
       width: 100%;
       font-size: 18px;

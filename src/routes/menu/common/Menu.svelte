@@ -16,7 +16,7 @@
 
 <div class="menu">
     {#if ready}
-        <div transition:fly|global={{duration: 700, y: -100}}>
+        <div class="header-absolute" transition:fly|global={{duration: 700, y: -100}}>
             <Header/>
         </div>
 
@@ -28,10 +28,20 @@
 
 <style lang="scss">
   .menu {
-    padding: 50px;
+    padding: 45px;
     display: flex;
     flex-direction: column;
     height: 100vh;
+    position: relative;
+  }
+
+  .header-absolute {
+    position: absolute;
+    top: 43.25px;
+    left: 45px;
+    right: 45px;
+    width: auto;
+    z-index: 10;
   }
 
   .menu-wrapper {
@@ -39,6 +49,7 @@
     display: flex;
     flex-direction: column;
     will-change: transform;
+    padding-top: 0px;
   }
 
   @media screen and (max-width: 1366px) {

@@ -46,7 +46,7 @@
   }
 
   .tab-button {
-    font-family: "Inter", sans-serif;
+    font-family: "redhattext", sans-serif;
     background-color: rgba(black, .36);
     color: white;
     padding: 10px;

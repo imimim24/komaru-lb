@@ -39,9 +39,8 @@
     left: 50%;
     top: 0;
     transform: translate(-50%, -45px);
-    z-index: 1000;
+    z-index: 1000000;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    font-family: "sf-pro";
 
     &::after {
       content: "";

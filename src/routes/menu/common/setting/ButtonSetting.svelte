@@ -30,39 +30,41 @@
 </button>
 
 <style lang="scss">
-  @use "sass:color";
   @use "../../../../colors.scss" as *;
 
   .button-setting {
     position: relative;
     border: none;
-    background-color: $accent-color;
+    background-color: black;
     color: white;
-    font-family: "Inter", sans-serif;
-    padding: 20px;
-    border-radius: 5px;
+    padding: 15px;
+    border-radius: 12px;
     font-size: 20px;
-    transition: ease background-color .2s, ease opacity .2s;
+    transition:
+      ease background-color 0.2s,
+      ease opacity 0.2s;
+    font-weight: 600;
+    box-shadow: $shadow;
 
     &.inset {
       margin: 0 30px;
     }
 
     &.secondary {
-      background-color: rgba(black, .36);
+      background-color: black;
     }
 
     &:not([disabled]):hover {
-      background-color: color.adjust(color.adjust($accent-color, $saturation: -30%), $lightness: -10%);
+      background-color: rgba(white, 0.45);
       cursor: pointer;
 
       &.secondary {
-        background-color: color.adjust(color.adjust(black, $saturation: -30%), $lightness: -10%);
+        background-color: rgba(white, 0.5);
       }
     }
 
     &[disabled] {
-      opacity: .6;
+      opacity: 0.6;
     }
   }
 </style>

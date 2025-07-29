@@ -15,7 +15,7 @@
   @use "../../../colors.scss" as *;
 
   .search {
-    background-color: rgba(black, .36);
+    background-color: black;
     border: none;
     color: white;
     font-family: "redhattext", sans-serif;
@@ -26,7 +26,7 @@
     background-position: 20px center;
     padding: 15px 15px 15px 55px;
     flex: 1;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: $shadow;
     margin-left: -10px;
     z-index: 1;
   }

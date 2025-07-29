@@ -251,16 +251,16 @@
 
     <BottomButtonWrapper>
         <ButtonContainer>
-            <IconTextButton icon="icon-plus-circle.svg" title="Add" on:click={() => addProxyModalVisible = true}/>
-            <IconTextButton icon="icon-clipboard.svg" title="Add Clipboard" on:click={() => addProxyFromClipboard()}/>
-            <IconTextButton icon="icon-random.svg" disabled={renderedProxies.length === 0} title="Random"
+            <IconTextButton title="Add" on:click={() => addProxyModalVisible = true}/>
+            <IconTextButton title="Add Clipboard" on:click={() => addProxyFromClipboard()}/>
+            <IconTextButton disabled={renderedProxies.length === 0} title="Random"
                             on:click={connectToRandomProxy}/>
-            <IconTextButton icon="icon-disconnect.svg" disabled={!isConnectedToProxy} title="Disconnect"
+            <IconTextButton disabled={!isConnectedToProxy} title="Disconnect"
                             on:click={disconnectFromProxy}/>
         </ButtonContainer>
 
         <ButtonContainer>
-            <IconTextButton icon="icon-back.svg" title="Back" on:click={() => deleteScreen()}/>
+            <IconTextButton title="Back" on:click={() => deleteScreen()}/>
         </ButtonContainer>
     </BottomButtonWrapper>
 </Menu>

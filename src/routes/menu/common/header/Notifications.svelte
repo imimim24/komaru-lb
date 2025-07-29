@@ -63,6 +63,7 @@
     overflow: hidden;
     padding-right: 10px;
     min-width: 350px;
+    box-shadow: $shadow;
 
     .title {
       color: white;

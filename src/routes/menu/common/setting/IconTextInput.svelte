@@ -41,7 +41,7 @@
 
   .input {
     color: white;
-    font-family: "Inter", sans-serif;
+    font-family: "redhattext", sans-serif;
     font-size: 20px;
     background-color: rgba(black, .36);
     border: none;

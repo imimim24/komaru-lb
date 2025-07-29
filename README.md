@@ -13,7 +13,7 @@ This theme is not finished. There may be bugs.
 
 HUD 100%
 
-Menu 35% (in work)
+Menu 55% (in work)
 
 ## Screenshots
 <details>

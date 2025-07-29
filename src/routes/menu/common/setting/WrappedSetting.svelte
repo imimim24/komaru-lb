@@ -84,7 +84,7 @@
 
   .wrapped-setting {
     position: relative;
-    min-width: 300px;
+    min-width: 250px;
 
     &.expanded {
       .header {
@@ -104,6 +104,7 @@
         justify-content: space-between;
         border-radius: 5px;
         transition: ease border-radius .2s;
+        height: 25;
       }
     }
   }

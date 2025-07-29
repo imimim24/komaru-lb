@@ -84,7 +84,7 @@
 <style>
 .clock {
     position: absolute;
-    top: -80px;
+    top: -0px;
     color: white;
     font-family: "inter";
     opacity: 0.8;

@@ -46,7 +46,7 @@
     height: 45px;
     border: none;
     border-radius: 12px;
-    background: radial-gradient(circle 150px at 50% -50%, #333333, #000000);
+    background: radial-gradient(circle 100px at 50% -50%, #333333, #000000);
     box-shadow: inset 0 1px 0 #2a2a2a, 0 4px 10px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;

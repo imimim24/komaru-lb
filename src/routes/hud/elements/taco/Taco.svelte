@@ -99,7 +99,5 @@
   text-align: center;
   width: 100%;
   display: block;
-
-  @extend .pulse-color;
 }
 </style>
