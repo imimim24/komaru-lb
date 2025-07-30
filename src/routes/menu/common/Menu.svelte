@@ -42,6 +42,7 @@
     right: 45px;
     width: auto;
     z-index: 10;
+    pointer-events: none;
   }
 
   .menu-wrapper {

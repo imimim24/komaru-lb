@@ -62,5 +62,6 @@
   align-items: center;
   max-width: fit-content;
   margin-left: auto;
+  pointer-events: auto;
 }
 </style>
