@@ -98,9 +98,9 @@ $GRID_SIZE: 10px;
     top: 0;
     z-index: -9999;
 
-&.grid {
-    background-image: linear-gradient(to right, rgba(100, 100, 100, 0.2) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(100, 100, 100, 0.2) 1px, transparent 1px);
-}
+    &.grid {
+        background-image: linear-gradient(to right, rgba(100, 100, 100, 0.2) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(100, 100, 100, 0.2) 1px, transparent 1px);
+    }
 }
 </style>

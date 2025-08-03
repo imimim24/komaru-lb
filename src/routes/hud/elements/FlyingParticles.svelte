@@ -46,7 +46,7 @@
     bottom: -100px;
     left: -10vw;
     width: 120vw;
-    height: 300px;
+    height: 250px;
     pointer-events: none;
     z-index: -999;
     background: radial-gradient(

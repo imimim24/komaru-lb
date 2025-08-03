@@ -36,14 +36,9 @@ Menu 55% (in work)
 ![image](.github/img/3.1.png)
 </details>
 <details>
-<summary>Inventory</summary>
-
-![image](.github/img/4.png)
-</details>
-<details>
 <summary>TargetHud</summary>
 
-![image](.github/img/5.png)
+![image](.github/img/4.png)
 </details>
 
 ## Hey!
@@ -62,5 +57,3 @@ Totem counter doesnt count totem on offhand.
 5. Done!
 
 thx for using my theme
-
-komarukomarukomarukomarukomarukomarukomaru

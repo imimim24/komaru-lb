@@ -9,6 +9,7 @@
     import { getPlayerData } from "../../../../integration/rest";
     import HealthProgress from "./HealthProgress.svelte";
     import ArmorStatus from "./ArmorStatus.svelte";
+    import AbsorptionBar from "./AbsorptionBar.svelte";
     import { onMount, tick } from "svelte";
 
     let target: PlayerData | null = null;
@@ -84,7 +85,7 @@
         if (previousHealth !== 0 && newHealth < previousHealth) {
             showDamageEffect = true;
             spawnParticles();
-            setTimeout(() => (showDamageEffect = false), 250);
+            setTimeout(() => (showDamageEffect = false), 200);
         }
         previousHealth = newHealth;
     });
@@ -125,11 +126,16 @@
         >
             <div class="avatar" bind:this={avatarEl}>
                 {#if showDamageEffect}
-                    <div class="damage-effect" out:fade={{ duration: 200 }}></div>
+                    <div class="damage-effect" out:fade={{ duration: 150 }}></div>
                 {/if}
                 <img
                     src="{REST_BASE}/api/v1/client/resource/skin?uuid={target.uuid}"
                     alt="avatar"
+                />
+                <img
+                    src="{REST_BASE}/api/v1/client/resource/skin?uuid={target.uuid}"
+                    alt="img2"
+                    class="img2"
                 />
             </div>
             <div class="name">{target.username}</div>
@@ -150,10 +156,16 @@
                     {/if}
                 </span>
             </div>
-            <HealthProgress
-                maxHealth={target.maxHealth + target.absorption}
-                health={target.actualHealth + target.absorption}
-            />
+            <div class="bars-stack">
+                <HealthProgress
+                    maxHealth={target.maxHealth}
+                    health={target.actualHealth}
+                />
+                <AbsorptionBar
+                    maxHealth={target.maxHealth}
+                    absorption={target.absorption}
+                />
+            </div>
         </div>
     </div>
 {/if}
@@ -284,11 +296,19 @@
         img {
             position: absolute;
             scale: 6.5;
+            right: 71px;
+            top: 122.5px;
+            z-index: 2;
+        }
+        
+        .img2 {
+            position: absolute;
+            scale: 6.5;
             left: 122.5px;
             top: 122.5px;
-            z-index: 1;
+            z-index: -1;
         }
-
+        
         .damage-effect {
             z-index: 10;
             position: absolute;
@@ -297,7 +317,6 @@
             width: 100%;
             height: 100%;
             background-color: rgba(red, 0.4);
-            border-radius: 9px;
         }
     }
 
@@ -321,6 +340,15 @@
         animation: particle-fly 0.4s linear forwards;
         z-index: 20;
         filter: blur(2px);
+    }
+
+    .bars-stack {
+        position: relative;
+        width: 141px;
+        left: 72px;
+        bottom: 16px;
+        height: 14.75px;
+        z-index: 30;
     }
 
     @keyframes particle-fly {

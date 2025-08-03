@@ -71,8 +71,6 @@
 
     .health-progress {
         position: relative;
-        bottom: 16px;
-        left: 72px;
         border-radius: 6px;
         max-width: 141px;
         overflow: visible;
