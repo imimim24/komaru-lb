@@ -1,6 +1,5 @@
 <script lang="ts">
-    import thWidth from "./TargetHud.svelte";
-    import { onMount, tick, onDestroy } from "svelte";
+    import { onMount, onDestroy } from "svelte";
 
     export let maxHealth: number;
     export let health: number;
@@ -8,16 +7,24 @@
     let width = Math.ceil((health / maxHealth) * 100);
     $: width = Math.ceil((health / maxHealth) * 100);
 
-    let prevWidth = width;
+    let prevWidth: number | null = null;
     let particles: { id: number, x: number, y: number, dx: number, dy: number, size: number, expiresAt: number }[] = [];
     let particleId = 0;
 
-    $: if (width < prevWidth) {
-        spawnHealthParticles(prevWidth - width);
-        prevWidth = width;
+    $: {
+        const newWidth = Math.ceil((health / maxHealth) * 100);
+        if (prevWidth !== null && newWidth < prevWidth) {
+            spawnHealthParticles(prevWidth - newWidth);
+        }
+        prevWidth = newWidth;
+        width = newWidth;
     }
 
+    const BAR_WIDTH = 141;
+
     function spawnHealthParticles(amount: number) {
+        const x = BAR_WIDTH * (width / 100);
+        const y = 14.75 / 2;
         const count = 8 + Math.floor(Math.random() * 7);
         const now = Date.now();
         for (let i = 0; i < count; i++) {
@@ -30,8 +37,8 @@
                 ...particles,
                 {
                     id: particleId++,
-                    x: width,
-                    y: 0,
+                    x,
+                    y,
                     dx,
                     dy,
                     size,
@@ -62,7 +69,7 @@
         <div class="thumb3" style="width: {width}%;"></div>
     </div>
     {#each particles as p (p.id)}
-        <div class="hp-particle" style="left: calc({p.x}%); top: {p.y}px; --dx: {p.dx}px; --dy: {p.dy}px; width: {p.size}px; height: {p.size}px;"></div>
+        <div class="hp-particle" style="left: {p.x}px; top: {p.y}px; --dx: {p.dx}px; --dy: {p.dy}px; width: {p.size}px; height: {p.size}px;"></div>
     {/each}
 </div>
 
