@@ -23,9 +23,6 @@
 
     let previousHealth = 0;
 
-    let particles: { id: number, x: number, y: number, dx: number, dy: number }[] = [];
-    let particleId = 0;
-
     let wrapperEl: HTMLDivElement | null = null;
     let avatarEl: HTMLDivElement | null = null;
 
@@ -53,28 +50,6 @@
         }, 750);
     }
 
-    async function spawnParticles(count = 12) {
-        await tick();
-        if (!wrapperEl || !avatarEl) return;
-        const wrapperRect = wrapperEl.getBoundingClientRect();
-        const avatarRect = avatarEl.getBoundingClientRect();
-        const centerX = avatarRect.left + avatarRect.width / 2 - wrapperRect.left;
-        const centerY = avatarRect.top + avatarRect.height / 2 - wrapperRect.top;
-        for (let i = 0; i < count; i++) {
-            const angle = Math.random() * 2 * Math.PI;
-            const speed = 60 + Math.random() * 20;
-            const dx = Math.cos(angle) * speed;
-            const dy = Math.sin(angle) * speed;
-            particles = [
-                ...particles,
-                { id: particleId++, x: centerX, y: centerY, dx, dy }
-            ];
-        }
-        setTimeout(() => {
-            particles = [];
-        }, 400);
-    }
-
     listen("targetChange", (data: TargetChangeEvent) => {
         target = data.target;
         visible = true;
@@ -84,7 +59,6 @@
         const newHealth = target!.actualHealth + target!.absorption;
         if (previousHealth !== 0 && newHealth < previousHealth) {
             showDamageEffect = true;
-            spawnParticles();
             setTimeout(() => (showDamageEffect = false), 200);
         }
         previousHealth = newHealth;
@@ -95,11 +69,6 @@
 
 {#if visible && target != null}
     <div class="targethud-wrapper" bind:this={wrapperEl}>
-        <div class="particles-container">
-            {#each particles as p (p.id)}
-                <div class="particle" style="left: {p.x}px; top: {p.y}px; --dx: {p.dx}px; --dy: {p.dy}px;"></div>
-            {/each}
-        </div>
         <div
             class="armor-stats"
             in:scale={{ duration: 300, easing: expoInOut }}
@@ -320,28 +289,6 @@
         }
     }
 
-    .particles-container {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        z-index: 30;
-    }
-
-    .particle {
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: $particle;
-        pointer-events: none;
-        animation: particle-fly 0.4s linear forwards;
-        z-index: 20;
-        filter: blur(2px);
-    }
-
     .bars-stack {
         position: relative;
         width: 141px;
@@ -349,19 +296,5 @@
         bottom: 16px;
         height: 14.75px;
         z-index: 30;
-    }
-
-    @keyframes particle-fly {
-        0% {
-            opacity: 1;
-            transform: translate(0, 0) scale(1);
-        }
-        80% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-            transform: translate(var(--dx), var(--dy)) scale(0.5);
-        }
     }
 </style>

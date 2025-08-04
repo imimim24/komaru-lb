@@ -1,30 +1,28 @@
-$accent-color: #4a7dc9;
-$base: rgb(0, 11, 29);
-$text: #5782c2;
-$wow: rgb(0, 15, 41);
+$accent-color: rgb(144, 255, 117);
+$base: rgb(10, 36, 10);
+$text: rgb(178, 255, 168);
+$wow: rgb(0, 51, 0);
 
-$clickgui-base-color: rgb(0, 11, 29);
-$clickgui-text-color: #4a7dc9;
-$clickgui-text-dimmed-color: #707991;
+$clickgui-base-color: rgb(10, 36, 10);
+$clickgui-text-color: rgb(144, 255, 117);
+$clickgui-text-dimmed-color: rgb(178, 222, 178);
 
-$yo: rgb(22, 62, 122);
-$yo2: rgb(66, 113, 184);
+$yo: rgb(57, 184, 57);
+$yo2: rgb(105, 255, 105);
 
-$a1: rgb(86, 154, 255);
-$a2: rgb(57, 98, 158);
+$a1: rgb(144, 255, 144);
+$a2: rgb(87, 180, 87);
 
-$txtshdw: rgb(103, 153, 228);
-$txtshdw2: rgb(74, 118, 184);
+$txtshdw: rgb(144, 255, 144);
+$txtshdw2: rgb(85, 206, 85);
 
-$healthprogress-particle: #569aff;
-$particle: #3284ff80;
+$healthprogress-particle: rgb(144, 255, 144);
 
-$hotbar1: rgb(22, 62, 122);
-$hotbar2: rgb(44, 88, 153);
-$hotbar3: rgb(68, 114, 182);
-
-$y-shadow: 0 0 30px 2px rgba(88, 155, 255, 0.5);
+$y-shadow: 0 0 30px 2px rgba(144, 255, 144, 0.5);
+$hotbar1: rgb(44, 128, 44);
+$hotbar2: rgb(88, 176, 88);
+$hotbar3: rgb(122, 222, 122);
 $base-shadow: 0 0 30px 0 rgba($base, 0.5);
-$shadow: 0px 0px 16px rgba($base, 0.5);
+$shadow: 0px 0px 16px rgba(black, 0.5);
 $shadow-arraylist: 0 0 50px 0 rgba($base, 0.6);
 $texte: 0px 0px 20px $text;
